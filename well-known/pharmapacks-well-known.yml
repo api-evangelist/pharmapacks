@@ -1,0 +1,92 @@
+generated: '2026-08-26'
+method: probed
+source: >-
+  Direct unauthenticated HTTPS probes of every host associated with Pharmapacks /
+  Packable on 2026-08-26. No .well-known document was served by either host, so no
+  WellKnown or SecurityTxt pointer is wired in apis.yml — this file records a
+  measured absence, not a presence.
+note: >-
+  pharmapacks.com is a GoDaddy parked-domain lander and answers HTTP 200 with the
+  same React parking shell for EVERY path, including every /.well-known/* path
+  probed below. Those 200s are catch-all HTML, not documents; they are recorded
+  as served_html: true and treated as misses. www.packable.com (the live successor
+  brand site, WordPress on WP Engine) 404s every /.well-known/* path.
+hosts:
+- host: pharmapacks.com
+  note: >-
+    Parked GoDaddy lander (window.location.href="/lander", LANDER_SYSTEM="PW").
+    Every path returns 200 with the parking shell, so no status here is evidence
+    of a served document.
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    served_html: true
+    file: null
+    result: miss-parking-shell
+  - path: /.well-known/openid-configuration
+    status: 200
+    served_html: true
+    file: null
+    result: miss-parking-shell
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    served_html: true
+    file: null
+    result: miss-parking-shell
+  - path: /.well-known/api-catalog
+    status: 200
+    served_html: true
+    file: null
+    result: miss-parking-shell
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    served_html: true
+    file: null
+    result: miss-parking-shell
+  - path: /.well-known/agent-card.json
+    status: 200
+    served_html: true
+    file: null
+    result: miss-parking-shell
+  - path: /.well-known/agent.json
+    status: 200
+    served_html: true
+    file: null
+    result: miss-parking-shell
+- host: www.packable.com
+  note: >-
+    Live WordPress marketing site for the successor Packable brand. No developer
+    program; every /.well-known/* path 404s.
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+    result: miss
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+    result: miss
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+    result: miss
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+    result: miss
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+    result: miss
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+    result: miss
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+    result: miss
+summary:
+  documents_served: 0
+  hosts_probed: 2
+  pointer_emitted: false

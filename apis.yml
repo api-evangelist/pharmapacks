@@ -1,17 +1,43 @@
 aid: pharmapacks
 name: Pharmapacks
-description: 'Pharmapacks is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: >-
+  Pharmapacks was a New York-based e-commerce marketplace seller and third-party
+  logistics operator, founded in 2010 in Long Island City, that grew into one of the
+  largest independent sellers of health, beauty and personal-care goods on Amazon,
+  eBay and Walmart Marketplace. The company rebranded as Packable Holdings LLC in
+  2021, agreed a SPAC merger with Highland Transcend Partners I Corp. that was
+  abandoned in March 2022, and filed for Chapter 11 bankruptcy protection on
+  2022-08-28 before ceasing operations and liquidating substantially all of its
+  assets. Its differentiator was an internal "Master Brain" marketplace-listing,
+  repricing and fulfillment platform, but that technology was operated as an internal
+  system and was never published as a public developer program: no developer portal,
+  API reference, SDK, webhook catalog or machine-readable contract has ever been
+  found on any host the company controlled. The pharmapacks.com domain is today a
+  GoDaddy parking lander. A successor brand operating as Packable at packable.com,
+  led by Pharmapacks/Packable co-founder Jonathan Webb, sells fulfillment, logistics
+  and digital-enablement services and likewise publishes no public API.
 url: https://raw.githubusercontent.com/api-evangelist/pharmapacks/refs/heads/main/apis.yml
+image: https://www.packable.com/wp-content/themes/packable_2023/assets/images/logo.svg
 x-type: company
 x-source: harvest:secondary-market
 x-tier: stub
 x-tier-reason: harvest
+x-status: defunct
+x-secondary-market-listing: https://forgeglobal.com/pharmapacks_stock/
 specificationVersion: '0.20'
 created: '2026-08-26'
 modified: '2026-08-26'
 tags:
 - Company
+- E-Commerce
+- Marketplace
+- Fulfillment
+- Logistics
+- Retail
+- Supply Chain
+- Health and Beauty
+- Distribution
+- Defunct
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +45,42 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/pharmapacks-domain-security.yml
 - type: Website
-  url: https://forgeglobal.com/pharmapacks_stock/
+  url: https://www.packable.com/
+- type: TermsOfService
+  url: https://www.packable.com/terms-of-use/
+- type: PrivacyPolicy
+  url: https://www.packable.com/privacy-policy/
+- type: Support
+  url: https://www.packable.com/contact-us/
+- type: LLMsTxt
+  url: llms/pharmapacks-llms.txt
+x-enrichment:
+  date: '2026-08-26'
+  status: minimal
+  artifacts_added: 4
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: defunct
+  detail: >-
+    Pharmapacks (Packable Holdings LLC) filed Chapter 11 on 2022-08-28 and ceased
+    operations; pharmapacks.com is now a GoDaddy parked-domain lander that answers
+    HTTP 200 with the same React parking shell for every path including
+    /openapi.json and every /.well-known/*, and the live successor brand site
+    www.packable.com is a WordPress marketing site with no developer section that
+    404s every spec, GraphQL and /.well-known probe.
+  evidence:
+  - url: https://pharmapacks.com/
+    status: 200
+  - url: https://pharmapacks.com/openapi.json
+    status: 200
+  - url: https://www.packable.com/openapi.json
+    status: 404
+  - url: https://www.packable.com/.well-known/agent-card.json
+    status: 404
+  - url: https://www.packable.com/graphql
+    status: 404
+  checked: '2026-08-26'

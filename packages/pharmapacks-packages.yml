@@ -1,0 +1,23 @@
+generated: '2026-08-26'
+method: searched
+source: >-
+  Unauthenticated registry searches on 2026-08-26: registry.npmjs.org search API,
+  pypi.org/pypi/<pkg>/json, rubygems.org/api/v1/gems/<pkg>.json,
+  crates.io/api/v1/crates?q=, plus api.github.com/orgs/{pharmapacks,packable,packable-inc}.
+note: >-
+  No first-party client library, SDK or CLI exists for Pharmapacks / Packable in any
+  public registry. npm search for "pharmapacks" returns 0 results; PyPI, RubyGems and
+  crates.io all 404 on "pharmapacks". The unrelated collisions on the term "packable"
+  (the `packable` Rust crate, an IOTA bit-packing library, and a `packable` RubyGem)
+  are third-party and are NOT this company. No GitHub organization exists under any of
+  the three obvious slugs. No Packages or SDKs pointer is wired in apis.yml, because
+  there is nothing to point at.
+registries_searched:
+- npm
+- pypi
+- rubygems
+- crates.io
+- github-orgs
+packages: []
+package_count: 0
+official_count: 0
