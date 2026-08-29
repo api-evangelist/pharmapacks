@@ -17,6 +17,17 @@ description: >-
   led by Pharmapacks/Packable co-founder Jonathan Webb, sells fulfillment, logistics
   and digital-enablement services and likewise publishes no public API.
 url: https://raw.githubusercontent.com/api-evangelist/pharmapacks/refs/heads/main/apis.yml
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://www.packable.com/wp-content/themes/packable_2023/assets/images/logo.svg
 x-type: company
 x-source: harvest:secondary-market
