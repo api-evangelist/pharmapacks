@@ -64,5 +64,47 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Pharmapacks is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://forgeglobal.com/pharmapacks_stock/
+> **No longer operating.** This company or product has shut down, been discontinued, or been deprecated. This profile is kept as a historical record and is not maintained or rated.
+
+Pharmapacks was a New York-based e-commerce marketplace seller and third-party logistics operator, founded in 2010 in Long Island City, that grew into one of the largest independent sellers of health, beauty and personal-care goods on Amazon, eBay and Walmart Marketplace. The company rebranded as Packable Holdings LLC in 2021, agreed a SPAC merger with Highland Transcend Partners I Corp. that was abandoned in March 2022, and filed for Chapter 11 bankruptcy protection on 2022-08-28 before ceasing operations and liquidating substantially all of its assets. Its differentiator was an internal "Master Brain" marketplace-listing, repricing and fulfillment platform, but that technology was operated as an internal system and was never published as a public developer program: no developer portal, API reference, SDK, webhook catalog or machine-readable contract has ever been found on any host the company controlled. The pharmapacks.com domain is today a GoDaddy parking lander. A successor brand operating as Packable at packable.com, led by Pharmapacks/Packable co-founder Jonathan Webb, sells fulfillment, logistics and digital-enablement services and likewise publishes no public API.
+
+**Areas:** Company · E-Commerce · Marketplace · Fulfillment · Logistics · Retail · Supply Chain · Health and Beauty · Distribution · Defunct
+
+## Pharmapacks on APIs.io (historical record)
+
+Everything profiled for Pharmapacks is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/pharmapacks/](https://apis.io/providers/pharmapacks/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Pharmapacks Domain Security](https://apis.io/security/pharmapacks/pharmapacks-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.packable.com/)
+- [Support](https://www.packable.com/contact-us/)
+- [Terms of service](https://www.packable.com/terms-of-use/)
+- [Privacy policy](https://www.packable.com/privacy-policy/)
+
+## API Evangelist rating
+
+**Not rated** — this company is recorded as no longer operating, so no score is published. If it is in fact operating, say so on this repository and it will be re-profiled.
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Pharmapacks: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/pharmapacks/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
